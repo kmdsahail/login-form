@@ -1,0 +1,75 @@
+/* Inside styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222; /* Dark background color */
+}
+
+.login-container {
+  background-color: #333; /* Dark container background color */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow for contrast */
+  max-width: 400px;
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 25px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff; /* White text color */
+}
+
+.input-group input {
+  width: calc(100% - 20px); /* Subtract padding from width */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555; /* Dark border color */
+  background-color: #444; /* Dark input background color */
+  color: #fff; /* White text color */
+}
+
+button {
+  background-color: #007bff; /* Primary color for button */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker hover color */
+}
+
+#error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.1); /* Light border color */
+  border-left-color: #007bff; /* Primary color for spinner */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
